@@ -3,6 +3,6 @@ defmodule ElixirRefactoring.NorweiganParrot do
 
   defimpl ElixirRefactoring.Polybird, for: ElixirRefactoring.NorweiganParrot do
     def plumage(%ElixirRefactoring.NorweiganParrot{voltage: voltage}) when voltage > 100, do: "scorched"
-    def plumage(%ElixirRefactoring.NorweiganParrot{}), do: "beautiful"
+    def plumage(_), do: "beautiful"
   end
 end

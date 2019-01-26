@@ -3,6 +3,6 @@ defmodule ElixirRefactoring.AfricanSwallow do
 
   defimpl ElixirRefactoring.Polybird, for: ElixirRefactoring.AfricanSwallow do
     def plumage(%ElixirRefactoring.AfricanSwallow{number_of_coconuts: num}) when num > 2, do: "tired"
-    def plumage(%ElixirRefactoring.AfricanSwallow{}), do: "average"
+    def plumage(_), do: "average"
   end
 end
