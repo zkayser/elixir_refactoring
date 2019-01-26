@@ -4,7 +4,6 @@ defmodule ElixirRefactoring.PolyBirdTest do
   alias ElixirRefactoring.Polybird, as: Bird
   alias ElixirRefactoring.{EuropeanSwallow, AfricanSwallow, NorweiganParrot}
 
-
   test "European Swallow Plumage" do
     bird = %EuropeanSwallow{}
     assert Bird.plumage(bird) == "average"
