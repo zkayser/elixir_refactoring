@@ -21,4 +21,8 @@ defmodule BirdTest do
     bird = %Bird{ type: "NorweiganParrot", voltage: 1}
     assert Bird.plumage(bird) == "beautiful"
   end
+
+  test "fail" do
+    assert Bird.plumage(%Bird{}) == "average"
+  end
 end
